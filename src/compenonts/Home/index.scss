@@ -1,0 +1,28 @@
+@media screen and (max-width: 735px) {
+  .major{
+    display: none;
+  }
+
+  .other{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .major{
+    display: block;
+
+    > img{
+      width: 100%;
+    }
+  }
+
+  .other{
+    display: block;
+
+    >img{
+      width: 100%;
+    }
+  }
+
+}

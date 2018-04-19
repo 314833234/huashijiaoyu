@@ -1,0 +1,27 @@
+.banner{
+
+  img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .banner-m{
+    display: block;
+  }
+
+  .banner-w{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .banner-m{
+    display: none;
+  }
+
+  .banner-w{
+    display: block;
+  }
+
+}

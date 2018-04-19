@@ -1,0 +1,23 @@
+{
+  "name": "app-jiaoyu",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "lib-flexible": "^0.3.2",
+    "node-sass": "^4.8.3",
+    "px2rem-loader": "^0.1.9",
+    "sass-loader": "^7.0.1",
+    "whatwg-fetch": "^2.0.4"
+  }
+}

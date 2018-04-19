@@ -1,0 +1,142 @@
+.contact-box{
+
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-title{
+  margin: 0 0 20px;
+  line-height: 24px;
+  font-size: 20px;
+  color: #555;
+}
+
+.contact-item{
+  margin-bottom: 20px;
+
+  >input, >button{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    border: 1px solid #208ed3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+
+  >button{
+    background-color: #208ed3;
+    color: #fff;
+    font-size: 28px;
+  }
+}
+
+.contact-tips{
+  margin: 0 0 20px;
+  color: #555;
+  text-align: center;
+}
+
+.contact-roll-content{
+  height: 200px;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+
+.contact-roll{
+  animation:3s move infinite linear;
+}
+
+.contact-roll-item{
+  display: flex;
+  line-height: 40px;
+
+  > span{
+    flex: 1;
+    color: #208ed3;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .contact-item{
+    width: 100%;
+  }
+
+  .contact-m{
+    display: block;
+
+    padding: 30px 50px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .contact-w{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .contact-item{
+    flex: 1;
+  }
+
+  .contact-m{
+    display: none;
+  }
+
+  .contact-w{
+    display: block;
+    position: relative;
+  }
+
+  .contact-w-bg{
+    min-height: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-w-content{
+    padding: 50px 0;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -600px;
+  }
+
+  .contact-w-item{
+    margin: 15px 0;
+    text-align: right;
+
+    >input, >button, >select{
+      padding: 0 5px;
+      height: 50px;
+      width: 400px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #208ed3;
+      background: rgba(255, 255, 255, 0.7);
+      box-sizing: border-box;
+    }
+
+    >button{
+      background: rgba(32, 142, 211, 1);
+      color: #fff;
+      font-size: 22px;
+    }
+  }
+}
+
+@-webkit-keyframes move{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -200px, 0);
+  }
+}

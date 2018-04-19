@@ -1,0 +1,57 @@
+@media screen and (max-width: 735px) {
+  .school{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .school{
+    display: block;
+  }
+}
+
+.school{
+  background-color: #f2f2f2;
+}
+
+.school-box{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0.1px;
+}
+
+.school-title{
+  margin: 40px 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+.school-list{
+  display: flex;
+}
+
+.school-item{
+  flex: 1;
+  margin: 0 15px;
+
+
+  >img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px #ccc;
+  }
+}
+
+.school-btn{
+  display: block;
+  margin: 30px auto 50px;
+  height: 50px;
+  padding: 0 30px;
+  border: 1px solid #208ed3;
+  color: #208ed3;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 16px;
+}

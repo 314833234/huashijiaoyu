@@ -1,0 +1,146 @@
+.answer-box{
+  margin-bottom: 30px;
+}
+
+.answer-other{
+  padding: 20px 0;
+  text-align: center;
+
+  >h4{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  >p{
+    font-size: 18px;
+    color: #555;
+  }
+}
+
+.answer-other-title{
+  margin: 30px 0;
+  position: relative;
+  text-align: center;
+
+  >span{
+    padding:  0 50px;
+    position: relative;
+    z-index: 9;
+    color: #208ed3;
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% + 5px);
+    width: 100%;
+    height: 4px;
+    background-color: #208ed3;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7px);
+    width: 100%;
+    height: 4px;
+    background-color: #208ed3;
+  }
+}
+
+.answer{
+  padding: 0 20px;
+}
+
+.answer-content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.answer-title{
+  margin: 30px 0 10px;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 735px) {
+  .answer-label{
+    width: calc(50% - 30px);
+    margin: 10px 15px;
+
+    &.active .answer-tx{
+      background-color: #208ed3;
+      color: #fff;
+    }
+  }
+
+  .answer-radio{
+    display: none;
+
+    &:checked + span.answer-tx{
+      background-color: #208ed3;
+      color: #fff;
+    }
+  }
+
+  .answer-tx{
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+    border: 1px solid #208ed3;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .answer-other{
+    display: block;
+  }
+
+  .answer-w{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .answer-label{
+    width: 33.33%;
+    padding: 10px 0;
+  }
+
+  .answer-box{
+    padding: 50px 0;
+    background-color: #f2f2f2;
+  }
+
+  .answer-list{
+    margin: 0 auto;
+    padding:  20px 40px 40px;
+    width: 1200px;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px #e0e0e0;
+    box-sizing: border-box;
+  }
+
+  .answer-other{
+    display: none;
+  }
+
+  .answer-w{
+    display: block;
+    margin-bottom: 45px;
+
+    >h4{
+      font-size: 28px;
+      text-align: center;
+      color: #f90606;
+    }
+  }
+}

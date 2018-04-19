@@ -1,0 +1,17 @@
+@media screen and (max-width: 735px) {
+  .nav{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .nav{
+    height: 50px;
+    background-color: #208ed3;
+  }
+
+  .nav-content{
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

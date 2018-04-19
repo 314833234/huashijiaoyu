@@ -1,0 +1,16 @@
+@media screen and (max-width: 735px) {
+  .header{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .header{
+    height: 120px;
+  }
+
+  .header-content{
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
